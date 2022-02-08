@@ -84,7 +84,7 @@ public class DoubleLinkedList<T> {
 		list.searchNode(9);
 		
 	}
-	
+	//Method to insert element into the list
 	public void insert(T key) {
 		DLLNode<T> newNode = new DLLNode<T>(key);
 		if(head == null) {
@@ -106,6 +106,7 @@ public class DoubleLinkedList<T> {
 		}		
 	}
 	
+	//Method to print the list
 	public void print() {
 		if(head == null) {
 			System.out.println("List is empty");
@@ -120,6 +121,7 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
+	//Method to add element in the begining of the list
 	public void addNodeAtFirst(T key) {
 		DLLNode<T> newNode = new DLLNode<T>(key);
 		if(head == null) {
@@ -135,6 +137,7 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
+	//Method to add element at the end of the list
 	public void addNodeAtLast(T key) {
 		DLLNode<T> newNode = new DLLNode<T>(key);
 		if(head == null) {
@@ -150,6 +153,7 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
+	//Method to remove first node/element of the list
 	public void removeFirstNode() {
 		if(head == null) {
 			System.out.println("List is already empty");
@@ -168,6 +172,7 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
+	//Method to remove last node/element of the list
 	public void removeLastNode() {
 		if(head == null) {
 			System.out.println("List is already empty");
@@ -186,6 +191,7 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
+	//Method to add element at given index of the list
 	public void addAtIndex(T key, int index) {
 		
 		DLLNode<T> newNode = new DLLNode<T>(key);
@@ -213,6 +219,7 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
+	//Method to remove element from the given index.
 	public void removeFromIndex(int index) {
 		if(head == null) {
 			System.out.println("List has no elements to remove");
@@ -241,7 +248,7 @@ public class DoubleLinkedList<T> {
 		}
 	}
 	
-	
+	//Method to search node by taking key as parameter and return its index
 	public void searchNode(T key) {
 		if(head == null) {
 			System.out.println("List contains no elements");
